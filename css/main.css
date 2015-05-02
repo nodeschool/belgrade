@@ -1,0 +1,16 @@
+body {
+  background-color: #F7DA03;
+  background-image: url(../img/nodeschoolio-header-bg.png);
+  background-size: 25%;
+  background-position: 0 -100px;
+}
+
+.logo {
+  display: block;
+  margin: 100px auto 20px;
+}
+
+h1, p {
+  text-align: center;
+  font-family: sans-serif;
+}
