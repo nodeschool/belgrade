@@ -14,3 +14,10 @@ h1, p {
   text-align: center;
   font-family: sans-serif;
 }
+
+.slack {
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+  right: 20px;
+}
