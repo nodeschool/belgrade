@@ -4,6 +4,9 @@
     <title>Belgrade NodeSchool</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/set2.css" />
   </head>
   <body>
     <span class="slack">
@@ -12,5 +15,52 @@
     <img class="logo" src="img/nodeschool-belgrade.png" />
     <h1>NodeSchool Chapter for Belgrade, Serbia</h1>
     <p>More info soon, in the meantime join the discussion on Slack.</p>
+    <div class="apply-form">
+      <h2>Sign up</h2>
+      <span class="input input--nao">
+        <input class="input__field input__field--nao" type="text" id="input-name-attendee" />
+        <label class="input__label input__label--nao" for="input-name-attendee">
+          <span class="input__label-content input__label-content--nao">First & last name</span>
+        </label>
+        <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+        </svg>
+      </span>
+      <span class="input input--nao">
+        <input class="input__field input__field--nao" type="text" id="input-email-attendee" />
+        <label class="input__label input__label--nao" for="input-email-attendee">
+          <span class="input__label-content input__label-content--nao">Email</span>
+        </label>
+        <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+        </svg>
+      </span>
+      <button onclick="enroll('input-name-attendee', 'input-email-attendee')"> apply </button>
+    </div>
+    <div class="apply-form">
+      <h2>Sign up as mentor</h2>
+      <span class="input input--nao">
+        <input class="input__field input__field--nao" type="text" id="input-name-mentor" />
+        <label class="input__label input__label--nao" for="input-name-mentor">
+          <span class="input__label-content input__label-content--nao">First & last name</span>
+        </label>
+        <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+        </svg>
+      </span>
+      <span class="input input--nao">
+        <input class="input__field input__field--nao" type="text" id="input-email-mentor" />
+        <label class="input__label input__label--nao" for="input-email-mentor">
+          <span class="input__label-content input__label-content--nao">Email</span>
+        </label>
+        <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+          <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+        </svg>
+      </span>
+      <button onclick="enroll('input-name-mentor', 'input-email-mentor', true)"> apply mentor </button>
+    </div>
+  <script type="text/javascript" src="scripts/vendor/xhr.js"></script>
+  <script type="text/javascript" src="scripts/vendor/classie.js"></script>
+  <script type="text/javascript" src="scripts/enroll.js"></script>
   </body>
 </html>

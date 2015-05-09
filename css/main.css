@@ -8,6 +8,7 @@ body {
 .logo {
   display: block;
   margin: 100px auto 20px;
+  max-width: 300px;
 }
 
 h1, p {
@@ -20,4 +21,8 @@ h1, p {
   overflow: hidden;
   top: 20px;
   right: 20px;
+}
+
+.apply-form {
+  margin: 5px auto 10px;
 }
