@@ -1,10 +1,12 @@
-function ajax (url, callback) {
+function ajax (url, callback, errorCallback) {
   var xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
 
   xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    if (xmlhttp.readyState == 4 && xmlhttp.status < 300) {
       callback(xmlhttp.responseText);
+    } else {
+      errorCallback(xmlhttp.responseText);
     }
   };
 
