@@ -1,4 +1,10 @@
 body {
+  background: #f9f7f6
+}
+
+header {
+  display: block;
+  overflow: hidden;
   background-color: #F7DA03;
   background-image: url(../img/nodeschoolio-header-bg.png);
   background-size: 25%;
@@ -24,5 +30,6 @@ h1, p {
 }
 
 .apply-form {
-  margin: 5px auto 10px;
+  margin: 10px auto;
+  padding: 0 10px;
 }
