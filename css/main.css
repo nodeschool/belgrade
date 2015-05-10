@@ -11,6 +11,15 @@ header {
   background-position: 0 -100px;
 }
 
+a,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #F7DA03;
+}
+
 header .logo {
   display: block;
   margin: 100px auto 20px;
