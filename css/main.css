@@ -93,3 +93,16 @@ footer {
   font-size: 12px;
   text-align: center;
 }
+
+ul.share-buttons {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  width: 178px;
+  list-style: none;
+}
+
+ul.share-buttons li {
+  display: inline;
+}
