@@ -84,3 +84,12 @@ header .slack {
   border: 1px solid #000;
   background: #F7DA03;
 }
+
+footer {
+  margin: 50px auto;
+  padding: 0 10px;
+  max-width: 1000px;
+  border-top: 1px solid #9da8b2;
+  font-size: 12px;
+  text-align: center;
+}
