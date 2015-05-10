@@ -4,9 +4,9 @@ function ajax (url, callback, errorCallback) {
 
   xmlhttp.onreadystatechange = function() {
     if (xmlhttp.readyState == 4 && xmlhttp.status < 300) {
-      callback(xmlhttp.responseText);
+      callback(JSON.parse(xmlhttp.responseText));
     } else {
-      errorCallback(xmlhttp.responseText);
+      errorCallback(JSON.parse(xmlhttp.responseText));
     }
   };
 

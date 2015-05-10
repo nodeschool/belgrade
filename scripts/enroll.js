@@ -10,7 +10,6 @@
                 (isMentor ? '-mentor' : '') + '?email=' + email + '&name=' + name;
 
     ajax(url, function (response){
-      console.log('OK', response);
       alert('You are sucessfully subscribed to the mailing list');
     }, function (response) {
       if (response.error) {

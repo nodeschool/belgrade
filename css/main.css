@@ -11,18 +11,19 @@ header {
   background-position: 0 -100px;
 }
 
-.logo {
+header .logo {
   display: block;
   margin: 100px auto 20px;
   max-width: 300px;
 }
 
-h1, p {
+header h1,
+header p {
   text-align: center;
   font-family: sans-serif;
 }
 
-.slack {
+header .slack {
   position: absolute;
   overflow: hidden;
   top: 20px;
@@ -30,6 +31,47 @@ h1, p {
 }
 
 .apply-form {
-  margin: 10px auto;
+  margin: 30px auto;
   padding: 0 10px;
+  max-width: 1000px;
+}
+
+/* Button 1 */
+.btn {
+  border: 1px solid #9da8b2;
+  font-family: inherit;
+  font-size: 15px;
+  color: #9da8b2;
+  background: none;
+  cursor: pointer;
+  padding: 10px 34px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 40px;
+  width: 240px;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Button 1a */
+.btn:hover,
+.btn:active {
+  color: #000;
+  border: 1px solid #000;
+  background: #F7DA03;
 }
