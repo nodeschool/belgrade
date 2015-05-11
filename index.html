@@ -4,6 +4,8 @@
     <title>Belgrade NodeSchool</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />-->
     <link rel="stylesheet" type="text/css" href="css/set2.css" />
@@ -39,7 +41,9 @@
         </svg>
       </span>
       <span class="input">
-        <button class="btn" onclick="enroll('input-name-attendee', 'input-email-attendee')"> apply </button>
+        <a class="button button-yellow button-wide" onclick="enroll('input-name-attendee', 'input-email-attendee'); return false;">
+          <strong>apply</strong>
+        </a>
       </span>
     </div>
     <div class="apply-form">
@@ -65,7 +69,9 @@
         </svg>
       </span>
       <span class="input">
-        <button class="btn" onclick="enroll('input-name-mentor', 'input-email-mentor', true)"> apply as mentor </button>
+        <a class="button button-yellow button-wide" onclick="enroll('input-name-mentor', 'input-email-mentor', true); return false;">
+          <strong>apply as mentor</strong>
+        </a>
       </span>
     </div>
     <div class="apply-form">
