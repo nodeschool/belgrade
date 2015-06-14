@@ -11,6 +11,10 @@ header {
   background-position: 0 -100px;
 }
 
+section {
+  margin: 50px 0;
+}
+
 a,
 a:visited {
   color: black;
@@ -28,8 +32,10 @@ header .logo {
 
 header h1,
 header p {
-  text-align: center;
+  margin: 20px auto;
+  max-width: 1000px;
   font-family: sans-serif;
+  text-align: center;
 }
 
 header .slack {
@@ -39,10 +45,24 @@ header .slack {
   right: 20px;
 }
 
-.apply-form {
+.container {
   margin: 30px auto;
   padding: 0 10px;
   max-width: 1000px;
+}
+
+.next-event {
+  margin: 30px 0 10px;
+  padding: 10px 20px;
+  border: 3px solid #F7DA03;
+}
+
+p.announce {
+  font-size: 18px;
+}
+
+.apply-form {
+  margin-bottom: 30px;
 }
 
 /* Button 1 */
@@ -85,11 +105,29 @@ header .slack {
   background: #F7DA03;
 }
 
+a.btn {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  line-height: 42px;
+  text-decoration: none;
+}
+
+a.btn.external {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHpJREFUeNrs1kEKACEIBdCcw+qZPK3DLIJoN35Dgi+0DF9WokTE6IxnNAcBBBBwL8DMog0wk1cg4CtAESmAu0sVIl2BKgR0BRUI+A2giPsb0X7ivSJHAWjy0k6YSQ53QjT5kV/wO76pOLNUNbJ71yUcywkggIBuwCvAAI6Aj6c+ecTrAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-position: 110% center;
+}
+
+a.btn.external:hover {
+  background-position: 100% center;
+}
+
 footer {
   margin: 50px auto;
   padding: 0 10px;
   max-width: 1000px;
-  border-top: 1px solid #9da8b2;
+  border-top: 3px solid #000;
   font-size: 12px;
   text-align: center;
 }
